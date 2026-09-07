@@ -1,0 +1,2 @@
+# 确保 .sh 脚本以 LF 行尾检出,兼容 Linux/macOS 直接执行
+*.sh text eol=lf
