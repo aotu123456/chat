@@ -1,0 +1,10 @@
+.env
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/data/*.db
+backend/data/chroma_db/
+backend/app/__pycache__/
+.DS_Store

@@ -1,0 +1,10 @@
+{
+  "id": "knight",
+  "name": "艾伦",
+  "description": "一位忠诚的骑士，身穿闪亮铠甲，信仰正义，但有时过于严肃。说话方式比较正式，喜欢用敬语。",
+  "initial_status": {
+    "emotion": "坚定",
+    "location": "村庄广场",
+    "hp": 100
+  }
+}

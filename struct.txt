@@ -1,0 +1,31 @@
+multi_agent_rpg/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py              # FastAPI 应用入口
+│   │   ├── config.py            # 配置（LLM端点、路径等）
+│   │   ├── models.py            # Pydantic 数据模型
+│   │   ├── coordinator.py       # 中央协调器核心逻辑
+│   │   ├── agents/
+│   │   │   ├── __init__.py
+│   │   │   ├── individual.py    # 个体智能体类
+│   │   │   └── world.py         # 世界监管智能体类
+│   │   ├── memory/
+│   │   │   ├── __init__.py
+│   │   │   ├── vector_store.py  # ChromaDB 封装
+│   │   │   └── state_store.py   # SQLite 存储状态和短期记忆
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       └── llm_client.py    # 统一 LLM 调用（Ollama/OpenAI）
+│   ├── characters/              # 角色定义文件夹
+│   │   ├── knight.json
+│   │   └── mage.json
+│   ├── data/                    # 运行时数据（自动创建）
+│   │   ├── chroma_db/           # 向量库持久化目录
+│   │   └── rpg_state.db         # SQLite 数据库文件
+│   ├── requirements.txt
+│   └── run.py                   # 启动脚本
+└── frontend/
+    ├── index.html
+    ├── style.css
+    └── script.js
