@@ -141,5 +141,7 @@ def session_image(sid: str, req: ImageGenerateRequest):
 
 # ===================== 前端静态文件 =====================
 FRONTEND_DIR = BASE_DIR.parent / "frontend"
-if FRONTEND_DIR.exists():
-    app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
+FRONTEND_DIST_DIR = FRONTEND_DIR / "dist"
+FRONTEND_STATIC_DIR = FRONTEND_DIST_DIR if FRONTEND_DIST_DIR.exists() else FRONTEND_DIR
+if FRONTEND_STATIC_DIR.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_STATIC_DIR), html=True), name="frontend")

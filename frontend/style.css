@@ -539,3 +539,6 @@ select option { background: var(--bg-input); }
   .chat-sidebar { display: none; }
   .form-row.two-col { grid-template-columns: 1fr; }
 }
+
+/* React 挂载根节点 */
+#root { height: 100vh; }

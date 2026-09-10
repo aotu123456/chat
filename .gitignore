@@ -10,3 +10,6 @@ backend/data/*.db
 backend/data/chroma_db/
 backend/app/__pycache__/
 .DS_Store
+# Frontend / Vite
+frontend/node_modules/
+frontend/dist/

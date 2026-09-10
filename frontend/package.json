@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/aotu123456/chat#readme",
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
     "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   }
 }
